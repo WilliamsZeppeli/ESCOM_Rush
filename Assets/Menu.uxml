@@ -1,0 +1,13 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="menuprincipal" style="flex-grow: 1; background-color: rgb(20, 126, 140); justify-content: flex-end; align-items: center; display: none;">
+        <ui:Button text="Iniciar" name="btnIniciar" style="width: 30%; height: 20%; font-size: 70%; -unity-background-image-tint-color: rgb(11, 152, 0);"/>
+        <ui:Button text="Opciones" name="btnOpciones" style="width: 30%; height: 20%; font-size: 70%; -unity-background-image-tint-color: rgb(147, 128, 0);"/>
+        <ui:Button text="Salir&#10;" name="btnSalir" style="width: 30%; height: 20%; font-size: 70%; -unity-background-image-tint-color: rgb(94, 6, 0);"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="panelopciones" style="flex-grow: 1; background-color: rgb(184, 134, 11); width: 60%; height: 60%; bottom: initial; top: initial; left: initial; right: initial; flex-direction: column; align-self: center; align-items: center; justify-content: center;">
+        <ui:Button text="Regresar" name="btnRegresar" style="position: absolute; top: 0%; left: 0%; right: auto; bottom: auto; height: 92px; width: 148px; font-size: 30%; background-color: rgb(255, 239, 239);"/>
+        <ui:Slider label="General" value="42" high-value="100" name="sliderGeneral" style="width: 70%; height: 20%; font-size: 60%; -unity-text-align: middle-center; text-overflow: clip;"/>
+        <ui:Slider label="Música" value="42" high-value="100" name="sliderMusica" style="width: 70%; height: 20%; font-size: 60%; -unity-text-align: middle-center;"/>
+        <ui:Slider label="Efectos" value="42" high-value="100" name="sliderEfectos" style="width: 70%; height: 20%; font-size: 60%; -unity-text-align: middle-center;"/>
+    </ui:VisualElement>
+</ui:UXML>
