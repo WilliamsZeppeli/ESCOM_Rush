@@ -1,0 +1,13 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="hudbar" style="position: absolute; top: 0; left: 0; right: 0; height: 70px; background-color: rgba(10, 18, 28, 0.7); justify-content: space-between; flex-direction: row; align-items: center; padding-left: 16px; padding-right: 16px;">
+        <ui:Label text="Puntos: 0" name="puntajeLabel" style="font-size: 20px; color: rgb(235, 246, 255); -unity-font-style: bold;"/>
+        <ui:Button text="" triple-click-selects-line="false" icon-image="project://database/Assets/pause-button-outline-red-icon.png?fileID=-8844511409398234217&amp;guid=26f66d6e11556422db4e7fc8040d8a6c&amp;type=3#pause-button-outline-red-icon_0" name="btnpause" enabled="true" style="width: 56px; height: 56px; -unity-slice-type: sliced; background-color: rgba(212, 212, 212, 0);"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="panelpause" style="flex-grow: 1; position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(9, 14, 22, 0.7); justify-content: center; align-items: center; flex-direction: column;">
+        <ui:VisualElement name="pausecard" style="width: 50%; height: 55%; background-color: rgba(23, 34, 48, 0.95); border-top-left-radius: 14px; border-top-right-radius: 14px; border-bottom-left-radius: 14px; border-bottom-right-radius: 14px; align-items: center; justify-content: center;">
+            <ui:Label text="Pausa" name="pausetxt" style="font-size: 28px; color: rgb(230, 244, 255); -unity-font-style: bold; margin-bottom: 14px;"/>
+            <ui:Button text="Reanudar" name="btnreanudar" style="height: 52px; width: 50%; font-size: 18px; margin-bottom: 10px; -unity-background-image-tint-color: rgb(32, 168, 124); color: rgb(235, 252, 248);"/>
+            <ui:Button text="Salir" name="btnbackmenu" style="height: 52px; width: 50%; font-size: 18px; -unity-background-image-tint-color: rgb(197, 74, 72); color: rgb(255, 239, 239);"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

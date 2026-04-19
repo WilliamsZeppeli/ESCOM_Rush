@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="menuprincipal" style="flex-grow: 1; background-color: rgb(12, 18, 28); justify-content: space-between; align-items: stretch; padding-left: 6%; padding-right: 6%; padding-top: 6%; padding-bottom: 6%; display: none;">
+        <ui:VisualElement name="menutop" style="flex-direction: column; align-items: flex-start;">
+            <ui:Label text="ESCOM RUSH" name="titulo" style="font-size: 42px; color: rgb(235, 243, 255); -unity-font-style: bold; letter-spacing: 2px;" />
+            <ui:Label text="Demo runner academico" name="subtitulo" style="font-size: 16px; color: rgb(151, 173, 204); margin-top: 6px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="menucards" style="flex-direction: column; justify-content: center; align-items: stretch; background-color: rgba(20, 32, 44, 0.85); padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
+            <ui:Button text="Iniciar" name="btnIniciar" style="height: 56px; font-size: 20px; margin-bottom: 12px; -unity-background-image-tint-color: rgb(24, 160, 120); color: rgb(240, 252, 249);" />
+            <ui:Button text="Opciones" name="btnOpciones" style="height: 56px; font-size: 20px; margin-bottom: 12px; -unity-background-image-tint-color: rgb(228, 166, 30); color: rgb(32, 20, 0);" />
+            <ui:Button text="Salir" name="btnSalir" style="height: 56px; font-size: 20px; -unity-background-image-tint-color: rgb(198, 66, 62); color: rgb(255, 240, 240);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="panelopciones" style="flex-grow: 1; background-color: rgb(17, 24, 34); width: 70%; height: 70%; align-self: center; justify-content: center; align-items: stretch; padding-top: 18px; padding-bottom: 18px; padding-left: 18px; padding-right: 18px; border-top-left-radius: 14px; border-top-right-radius: 14px; border-bottom-left-radius: 14px; border-bottom-right-radius: 14px;">
+        <ui:Button text="Regresar" name="btnRegresar" style="position: absolute; top: 16px; left: 16px; height: 44px; width: 120px; font-size: 16px; background-color: rgb(233, 236, 242); color: rgb(18, 20, 22);" />
+        <ui:Label text="Opciones de Audio" name="tituloOpciones" style="align-self: center; font-size: 26px; color: rgb(223, 232, 246); -unity-font-style: bold; margin-top: 12px; margin-bottom: 16px;" />
+        <ui:Slider label="General" value="42" high-value="100" name="sliderGeneral" style="width: 85%; height: 73px; font-size: 18px; -unity-text-align: middle-center; margin-bottom: 10px; color: rgb(255, 0, 0);" />
+        <ui:Slider label="Musica" value="42" high-value="100" name="sliderMusica" style="width: 85%; height: 18%; font-size: 18px; -unity-text-align: middle-center; margin-bottom: 10px; color: rgb(255, 0, 0);" />
+        <ui:Slider label="Efectos" value="42" high-value="100" name="sliderEfectos" style="width: 85%; height: 18%; font-size: 18px; -unity-text-align: middle-center; color: rgb(255, 0, 0);" />
+    </ui:VisualElement>
+</ui:UXML>
