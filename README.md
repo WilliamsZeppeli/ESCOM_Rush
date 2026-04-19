@@ -12,13 +12,13 @@ El concepto principal de ESCOM Rush es combinar la jugabilidad clásica de los r
 
 El proyecto contempla:
 
-* 🎮 Modo **Infinito** con dificultad progresiva.
+* 🎮 Modo **Infinito** con dificultad progresiva y Modo **Historia**
 * 🏫 Escenarios inspirados en instalaciones de ESCOM.
 * ⚡ Obstáculos dinámicos.
 * 📈 Sistema de puntaje en tiempo real.
 * ⏸️ Sistema de pausa y reanudación.
 * 🎛️ Menú principal con opciones configurables.
-* 💻 Interfaz moderna utilizando **Unity UI Toolkit**.  
+* 💻 Interfaz moderna utilizando **Unity UI Toolkit**.
 
 ---
 
@@ -39,8 +39,9 @@ El proyecto contempla:
 ### Derrota
 
 * Si el jugador colisiona con un obstáculo:
-
-  * El personaje muere.
+  * El personaje retrocede y puede:
+    * Seguir adelante y ser más rápido que el perseguidor.
+    * Perder si sale de la pantalla.
   * Se reinicia automáticamente la escena actual.  
 
 ---
@@ -51,9 +52,14 @@ El proyecto cuenta con:
 
 ### Menú Principal
 
-* Iniciar juego
+* Modo de Juego
 * Opciones
 * Salir
+
+### Modo de Juego
+
+* Modo Infinito
+* Modo Historia
 
 ### Opciones
 
@@ -109,29 +115,6 @@ git clone https://github.com/WilliamsZeppeli/ESCOM_Rush.git
 3. Cargar la escena principal.
 
 4. Ejecutar con **Play**.
-
----
-
-## 📈 Estado actual
-
-✅ Menú principal funcional
-✅ Sistema de movimiento
-✅ Obstáculos dinámicos
-✅ Puntaje
-✅ Reinicio automático
-✅ Pausa/Reanudar
-✅ Modo infinito funcional
-
----
-
-## 🔮 Trabajo futuro
-
-* Historia con niveles progresivos.
-* Guardado de partidas.
-* Ranking de puntuaciones.
-* Sonidos y música dinámica.
-* Más personajes jugables.
-* Power-ups y habilidades especiales.
 
 ---
 
