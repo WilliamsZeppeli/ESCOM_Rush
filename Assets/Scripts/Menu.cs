@@ -35,7 +35,7 @@ public class Menu : MonoBehaviour
         menuPrincipal.style.display = DisplayStyle.Flex;
         panelOpciones.style.display = DisplayStyle.None;
 
-        btnIniciar.clicked += IniciarJuego;
+        btnIniciar.clicked += IniciarMenu;
         btnOpciones.clicked += AbrirOpciones;
         btnSalir.clicked += SalirJuego;
         btnRegresar.clicked += RegresarMenu;
@@ -47,7 +47,7 @@ public class Menu : MonoBehaviour
 
     private void OnDisable()
     {
-        if (btnIniciar != null) btnIniciar.clicked -= IniciarJuego;
+        if (btnIniciar != null) btnIniciar.clicked -= IniciarMenu;
         if (btnOpciones != null) btnOpciones.clicked -= AbrirOpciones;
         if (btnSalir != null) btnSalir.clicked -= SalirJuego;
         if (btnRegresar != null) btnRegresar.clicked -= RegresarMenu;
@@ -57,9 +57,9 @@ public class Menu : MonoBehaviour
         if (sliderEfectos != null) sliderEfectos.UnregisterValueChangedCallback(CambiarVolumenEfectos);
     }
 
-    private void IniciarJuego()
+    private void IniciarMenu()
     {
-        SceneManager.LoadScene("Juego");
+        SceneManager.LoadScene("ModoJuego");
     }
 
     private void AbrirOpciones()
