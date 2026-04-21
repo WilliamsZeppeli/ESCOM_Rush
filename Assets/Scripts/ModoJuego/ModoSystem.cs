@@ -7,7 +7,7 @@ public class ModoSystem : MonoBehaviour
 {
     public void Historia()
     {
-        //SceneManager.LoadScene("Historia"); --> modificar cuando se tenga la escena de historia
+        SceneManager.LoadScene("SeleccionNivel");
         Debug.Log("Pantalla: Seleccion de niveles");
     }
     
