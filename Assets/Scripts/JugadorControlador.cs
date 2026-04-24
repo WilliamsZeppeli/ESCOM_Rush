@@ -35,7 +35,7 @@ public class JugadorControlador : MonoBehaviour
 
         if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && enSuelo)
         {
-            rb.velocity = new Vector2(rb.velocity.x, 0f);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
         }
     }
@@ -45,7 +45,7 @@ public class JugadorControlador : MonoBehaviour
         if (!estaVivo) return;
 
         float objetivoX = inputHorizontal * velocidadHorizontal;
-        rb.velocity = new Vector2(objetivoX, rb.velocity.y);
+        rb.linearVelocity = new Vector2(objetivoX, rb.linearVelocity.y);
 
         Vector2 posicion = rb.position;
         posicion.x = Mathf.Clamp(posicion.x, limiteIzquierdo, limiteDerecho);
