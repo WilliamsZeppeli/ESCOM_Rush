@@ -609,6 +609,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JugadorControlador
   fuerzaSalto: 15
+  velocidadHorizontal: 6
+  limiteIzquierdo: -7.5
+  limiteDerecho: 7.5
   puntoSuelo: {fileID: 1963111049}
   radioSuelo: 0.1
   capaSuelo:
