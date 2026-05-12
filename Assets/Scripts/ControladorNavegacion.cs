@@ -54,4 +54,8 @@ public class ControladorNavegacion : MonoBehaviour
     {
         SceneManager.LoadScene("ModoJuego");
     }
+    public void irAMain()
+    {
+        SceneManager.LoadScene("Main menu");
+    }
 }
