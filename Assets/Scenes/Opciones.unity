@@ -950,7 +950,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1020165085}
         m_TargetAssemblyTypeName: ControladorNavegacion, Assembly-CSharp
-        m_MethodName: irAMain
+        m_MethodName: IrAMain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
